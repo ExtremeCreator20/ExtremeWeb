@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExtremeCreator20</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: black;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .section {
+      flex: 1 0 30%;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    .hero {
+      text-align: center;
+    }
+    
+    .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .projects img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .social-links li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ExtremeCreator20</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <script>
+        let currentText = 0;
+        const texts = [
+          "Mods",
+          "Plugins",
+          "Modpacks",
+          "Games",
+          "Softwares",
+          "Videos"
+        ];
+        const switchInterval = 3;
+    
+        function switchText() {
+          currentText = (currentText + 1) % texts.length;
+          document.getElementById("text-container").textContent = texts[currentText];
+        }
+    
+        setInterval(switchText, switchInterval * 1000);
+        switchText();
+    </script>
+
+    <section class="section">
+      <h2>Turning Ideas into Reality</h2>
+      <p>I am a passionate developer. I create innovative and user-friendly solutions to meet your needs.</p>
+      <a href="#contact" class="btn">Contact me</a>
+    </section>
+    
+    <section class="section" id="about">
+      <h3>About Me</h3>
+      <p>I'm a developer who makes games (like <a href="https://github.com/PlaNDDev/PlaND">PlaND</a>),
+        softwares (like <a href="https://github.com/AntixVirus/AntixVirus">AntixVirus</a>), and Minecraft things (Plugins, Mods, Modpacks)</p>
+    </section>
+    
+    <section class="section" id="contact">
+      <h3>Contact</h3>
+      <ul>
+        <li>Email: theec20@theec20.dynv6.net</li>
+        <li>Website: <a href="https://extremecreator20.dynv6.net">extremecreator20.dyv6.net</a></li>
+        <li>Discord: extremecreator20</li>
+      </ul>
+    </section>
+    
+    <section class="section projects" id="projects">
+      <h3>Latest Projects</h3>
+      <img src="project1.jpg" alt="Project 1">
+      <img src="project2.jpg" alt="Project 2">
+      <p></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 ExtremeCreator20</p>
+    <ul class="social-links">
+      <li><a href="https://x.com/XtremeCreator20">Twitter/X</a></li>
+      <li><a href="https://github.com/ExtremeCreator20">GitHub</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
